@@ -30,7 +30,7 @@ export function NikeRunClub10() {
             </TextStrong>
             <Flex direction="column" alignSecondary="stretch" gap="400">
               <TextHeading className="nike-run-club-10-title">
-                SUNDAY RUN CLUB
+                SATURDAY RUN CLUB
               </TextHeading>
               <TextSubtitle className="nike-run-club-10-subtitle">
                 Ten kilometers. One crew. Move together.
