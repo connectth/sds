@@ -1,0 +1,58 @@
+/*
+ * Nike Run Club 10 page styles. Mobile-first, matching the 448px Figma frame:
+ * eyebrow, headline and run metrics at the top, the join action pinned to the
+ * bottom.
+ */
+
+.nike-run-club-10 {
+  background: var(--sds-color-background-default-default);
+  min-height: 100dvh;
+}
+
+.nike-run-club-10 .nike-run-club-10-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sds-size-space-1200);
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 600px;
+  min-height: 100dvh;
+  padding: var(--sds-size-space-600);
+}
+
+.nike-run-club-10 .nike-run-club-10-eyebrow,
+.nike-run-club-10 .nike-run-club-10-note {
+  color: var(--sds-color-text-default-secondary);
+  line-height: 1.4;
+}
+
+/* The Figma Title instance is a Heading component set in the Title Hero style. */
+.nike-run-club-10 .nike-run-club-10-title {
+  color: var(--sds-color-text-default-default);
+  font: var(--sds-font-title-hero);
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.nike-run-club-10 .nike-run-club-10-subtitle {
+  color: var(--sds-color-text-default-secondary);
+  line-height: 1.2;
+}
+
+.nike-run-club-10 .nike-run-club-10-metric {
+  .text-body-base {
+    color: var(--sds-color-text-neutral-tertiary);
+    line-height: 1.4;
+  }
+  .text-heading {
+    color: var(--sds-color-text-neutral-default);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+}
+
+/* Flex has no 2400 gap step; the design separates intro and metrics by 96px. */
+.nike-run-club-10 .nike-run-club-10-details {
+  gap: var(--sds-size-space-2400);
+}
